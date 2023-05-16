@@ -8,5 +8,10 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        stage('build'){
+            steps {
+                bat ' npm install'
+            }
+        }
     }
 }
